@@ -20,7 +20,7 @@ class AuthenticationLogServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'authentication-log');
 
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'authentication-log');
+        $this->loadTranslationsFrom(__DIR__ . '/../lang', 'authentication-log');
 
         $this->mergeConfigFrom(__DIR__.'/../config/authentication-log.php', 'authentication-log');
 
@@ -34,7 +34,7 @@ class AuthenticationLogServiceProvider extends ServiceProvider
             ], 'authentication-log-views');
 
             $this->publishes([
-                __DIR__.'/../resources/lang' => $this->app->langPath('vendor/authentication-log'),
+                __DIR__ . '/../lang' => $this->app->langPath('vendor/authentication-log'),
             ], 'authentication-log-translations');
 
             $this->publishes([

@@ -1,5 +1,5 @@
 {
-    "name": "gsmanager/laravel-authentication-log-gsmanager",
+    "name": "gsmanager/laravel-authentication-log",
     "description": "Laravel Authentication Log provides authentication logger and notification for Laravel.",
     "keywords": [
         "laravel",
@@ -16,19 +16,18 @@
         }
     ],
     "require": {
-        "php": "^7.2.5|^8.0",
-        "illuminate/auth": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/bus": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/console": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/contracts": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/database": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/http": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/notifications": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/support": "^7.30.4|^8.40.0|^9.0|^10.0|^11.0|^12.0"
+        "php": "^8.4",
+        "illuminate/auth": "^10.0|^11.0|^12.0",
+        "illuminate/bus": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/notifications": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
-        "phpunit/phpunit": "^8.4|^9.3.3|^10.0|^11.0"
+        "../vendor/phpunit/phpunit": "^10.0|^11.0|^12.0"
     },
     "autoload": {
         "psr-4": {
@@ -51,7 +50,7 @@
         }
     },
     "suggest": {
-        "guzzlehttp/guzzle": "Required to use the Slack transport (~6.0)",
+        "../vendor/guzzlehttp/guzzle": "Required to use the Slack transport (~6.0)",
         "nexmo/client": "Required to use the Nexmo transport (~1.0)."
     },
     "config": {

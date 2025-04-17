@@ -1,8 +1,8 @@
 <?php
 
-namespace GamePL\AuthenticationLog\Tests;
+namespace GSManager\AuthenticationLog\Tests;
 
-use Orchestra\Testbench\TestCase;
+use Tests\TestCase;
 
 class AuthenticationLogTest extends TestCase
 {

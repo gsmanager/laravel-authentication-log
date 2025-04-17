@@ -28,14 +28,17 @@ class AuthenticationLog extends Model
     protected $guarded = ['authenticatable_id', 'authenticatable_type'];
 
     /**
-     * The attributes that should be cast to native types.
+     * Get the attributes that should be cast.
      *
-     * @var array
+     * @return array<string, string>
      */
-    protected $casts = [
-        'login_at' => 'datetime',
-        'logout_at' => 'datetime',
-    ];
+    protected function casts(): array
+    {
+        return [
+            'login_at' => 'datetime',
+            'logout_at' => 'datetime',
+        ];
+    }
 
     /**
      * Get the authenticatable entity that the authentication log belongs to.
